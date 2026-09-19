@@ -1,0 +1,79 @@
+{
+  "title": "Privacy Policy",
+  "updated": "19 September 2026",
+  "introduction": "This policy covers Vidgets, its widget extensions, and the Vidgets support website. For privacy questions or requests, contact admin@technoforbes.com.",
+  "sections": [
+    {
+      "id": "local-data",
+      "title": "1. Your content stays on your device",
+      "paragraphs": [
+        "Vidgets works without an account. Your collections, priorities, focus sessions, countdowns, notes, imported photos, selected mood, quote preferences, and app settings are stored locally. The app and its widgets use a shared on-device container to show and update the same information.",
+        "Vidgets does not upload this content to a developer-operated server. This version has no advertising, tracking, third-party analytics SDK, or developer-operated cloud sync. We do not sell your personal information or use it for targeted advertising."
+      ]
+    },
+    {
+      "id": "photos",
+      "title": "2. Photos and permissions",
+      "paragraphs": [
+        "You choose individual photos using Apple's photo picker. Vidgets receives the selected image, not unrestricted access to your photo library. It creates a resized copy in local shared storage for your widgets. The app does not modify or delete the original in your Photos library.",
+        "Timer completion notifications are optional and use Apple's notification permission. You can turn them off in Vidgets or in system Settings. Live Activities can show your timer and priority title on system surfaces, including the Lock Screen; you can disable them in the app or system Settings. Core features remain usable without notifications or Live Activities.",
+        "Vidgets does not request access to your location, contacts, microphone, camera, or Health data. It uses WidgetKit to check which Vidgets widget types are installed; those results stay on the device."
+      ]
+    },
+    {
+      "id": "sharing",
+      "title": "3. Sharing, exports, and visible widgets",
+      "paragraphs": [
+        "Sharing happens only when you choose it. Set sharing lets you choose a style-only image or an image containing your content. A data export contains collections, priorities, session history, countdowns, notes, and connected-widget preferences. It contains photo filenames, not the photo files, and does not include the separate Quote and Mood preferences. It is not a complete backup and Vidgets currently has no import/restore feature.",
+        "The apps, people, and services you choose in the system share sheet handle shared copies under their own policies. Vidgets cannot recall or delete those copies. Content placed in widgets or Live Activities may be visible to someone who can see your screen. Choose what you display accordingly."
+      ]
+    },
+    {
+      "id": "support",
+      "title": "4. Information you send for support",
+      "paragraphs": [
+        "If you email admin@technoforbes.com, we receive your email address and whatever you choose to include, such as a message, screenshot, device details, or attachment. We use that information to respond, troubleshoot, and handle privacy requests. Vidgets does not automatically attach your widget content, exports, or diagnostic logs to an email.",
+        "Email providers process these communications to deliver and store messages. Support information is not used for advertising or sold. We retain it only for as long as reasonably needed to resolve the request, handle related follow-up, and meet applicable legal obligations. You can request deletion by emailing the same address. Avoid sending sensitive information that is not needed for your request."
+      ]
+    },
+    {
+      "id": "website",
+      "title": "5. Website hosting and external links",
+      "paragraphs": [
+        "The support and privacy pages are static pages intended to be hosted on GitHub Pages. They contain no advertising, analytics scripts, embedded third-party media, tracking pixels, or cookies set by Vidgets.",
+        "Visiting the hosted pages sends normal web-request information, including your IP address and browser information, to the hosting provider. GitHub may process technical logs for delivery, security, and service operation under its privacy statement. Opening external links, including Apple, GitHub, or Unsplash links, is subject to those sites' policies. Opening an email link uses the mail app you choose."
+      ]
+    },
+    {
+      "id": "retention",
+      "title": "6. Retention, deletion, and backups",
+      "paragraphs": [
+        "Local content remains until you remove it. You can edit or delete individual priorities, countdowns, and notes. In Vidgets, open Settings > Delete app data to reset collections, priorities, sessions, countdowns, notes, imported photo copies, and Quote/Mood preferences. This also stops the current timer and clears the app's temporary data export. A non-personal welcome-tour completion setting may remain. Widget snapshots can take time to refresh; remove a widget from the Home Screen if you need it hidden immediately.",
+        "Deleting local data does not remove originals in Photos, previously shared or exported copies, support emails, or device backups. Offloading an app is not the same as deleting its data. Your operating system may include app data in iCloud or computer backups according to your settings. Vidgets does not operate that backup service and cannot delete those copies; manage them through Apple or your backup provider.",
+        "Because we do not hold your locally stored widget content, we cannot retrieve or restore it for you. For support correspondence or other information you provided directly to us, contact admin@technoforbes.com to request access, correction, or deletion."
+      ]
+    },
+    {
+      "id": "security",
+      "title": "7. Security and your choices",
+      "paragraphs": [
+        "Vidgets uses the operating system's app sandbox and shared App Group storage. No storage method or email service can be guaranteed completely secure. Use a device passcode and take care when sharing screenshots, exports, or access to your device.",
+        "Depending on where you live, you may have rights to access, correct, delete, restrict, or object to processing of personal information, and to complain to your local data-protection authority. Contact admin@technoforbes.com to exercise rights relating to information we hold. Where applicable, responding to support requests is based on providing the assistance you request and our legitimate interest in supporting the app; information may also be retained when required by law."
+      ]
+    },
+    {
+      "id": "children",
+      "title": "8. Children's privacy",
+      "paragraphs": [
+        "Vidgets is a general-audience utility, not a service directed specifically at children under 13. It has no account registration or automatic upload of personal content. If you believe a child has sent personal information to the support address, contact us so we can address it and delete it where required."
+      ]
+    },
+    {
+      "id": "changes",
+      "title": "9. Policy changes and contact",
+      "paragraphs": [
+        "We may update this policy when the app or our practices change. The updated date identifies the current revision. Material changes will be communicated as required by applicable law. Privacy and support contact: admin@technoforbes.com."
+      ]
+    }
+  ]
+}

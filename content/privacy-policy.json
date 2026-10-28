@@ -1,13 +1,13 @@
 {
   "title": "Privacy Policy",
-  "updated": "19 September 2026",
+  "updated": "28 October 2026",
   "introduction": "This policy covers Vidgets, its widget extensions, and the Vidgets support website. For privacy questions or requests, contact admin@technoforbes.com.",
   "sections": [
     {
       "id": "local-data",
       "title": "1. Your content stays on your device",
       "paragraphs": [
-        "Vidgets works without an account. Your collections, priorities, focus sessions, countdowns, notes, imported photos, selected mood, quote preferences, and app settings are stored locally. The app and its widgets use a shared on-device container to show and update the same information.",
+        "Vidgets works without an account. Your collections, priorities, focus sessions, countdowns, notes, imported photos, habit schedules and check-in history, last-done dates, manual counters, selected mood, quote preferences, and app settings are stored locally. The app and its widgets use shared on-device storage to show the same information.",
         "Vidgets does not upload this content to a developer-operated server. This version has no advertising, tracking, third-party analytics SDK, or developer-operated cloud sync. We do not sell your personal information or use it for targeted advertising."
       ]
     },
@@ -17,14 +17,14 @@
       "paragraphs": [
         "You choose individual photos using Apple's photo picker. Vidgets receives the selected image, not unrestricted access to your photo library. It creates a resized copy in local shared storage for your widgets. The app does not modify or delete the original in your Photos library.",
         "Timer completion notifications are optional and use Apple's notification permission. You can turn them off in Vidgets or in system Settings. Live Activities can show your timer and priority title on system surfaces, including the Lock Screen; you can disable them in the app or system Settings. Core features remain usable without notifications or Live Activities.",
-        "Vidgets does not request access to your location, contacts, microphone, camera, or Health data. It uses WidgetKit to check which Vidgets widget types are installed; those results stay on the device."
+        "Vidgets does not request access to your location, contacts, microphone, camera, system calendar, or Health data. Counters and habits use only what you manually enter; they do not measure health or activity. The month widget uses your locally saved countdown moments, not your system calendar. Vidgets uses WidgetKit to check which Vidgets widget types are installed; those results stay on the device."
       ]
     },
     {
       "id": "sharing",
       "title": "3. Sharing, exports, and visible widgets",
       "paragraphs": [
-        "Sharing happens only when you choose it. Set sharing lets you choose a style-only image or an image containing your content. A data export contains collections, priorities, session history, countdowns, notes, and connected-widget preferences. It contains photo filenames, not the photo files, and does not include the separate Quote and Mood preferences. It is not a complete backup and Vidgets currently has no import/restore feature.",
+        "Sharing happens only when you choose it. Set sharing lets you choose a style-only image or an image containing your personal-widget content. A JSON export contains collections, priorities, session history, countdowns, notes, habit schedules and check-in history, last-done dates, counters, and connected-widget preferences. It excludes photo files and separate Quote and Mood preferences. It is not a complete backup and Vidgets currently has no import/restore feature.",
         "The apps, people, and services you choose in the system share sheet handle shared copies under their own policies. Vidgets cannot recall or delete those copies. Content placed in widgets or Live Activities may be visible to someone who can see your screen. Choose what you display accordingly."
       ]
     },
@@ -48,7 +48,7 @@
       "id": "retention",
       "title": "6. Retention, deletion, and backups",
       "paragraphs": [
-        "Local content remains until you remove it. You can edit or delete individual priorities, countdowns, and notes. In Vidgets, open Settings > Delete app data to reset collections, priorities, sessions, countdowns, notes, imported photo copies, and Quote/Mood preferences. This also stops the current timer and clears the app's temporary data export. A non-personal welcome-tour completion setting may remain. Widget snapshots can take time to refresh; remove a widget from the Home Screen if you need it hidden immediately.",
+        "Local content remains until you remove it. You can edit or delete individual priorities, countdowns, notes, habits and their check-in history, last-done items, and counters. In My Sets, Delete set removes only that set's saved content, focus history, and unused imported photo copies. It ends its active timer and keeps other sets and app-wide preferences. At least one set must remain. Settings > Delete app data resets personal-widget content, imported photo copies, and Quote/Mood preferences, stops the current timer, and clears the app's temporary JSON export. Non-personal welcome-tour and guided-tour completion settings may remain. Widget snapshots can take time to refresh; remove a widget if you need displayed content hidden immediately.",
         "Deleting local data does not remove originals in Photos, previously shared or exported copies, support emails, or device backups. Offloading an app is not the same as deleting its data. Your operating system may include app data in iCloud or computer backups according to your settings. Vidgets does not operate that backup service and cannot delete those copies; manage them through Apple or your backup provider.",
         "Because we do not hold your locally stored widget content, we cannot retrieve or restore it for you. For support correspondence or other information you provided directly to us, contact admin@technoforbes.com to request access, correction, or deletion."
       ]

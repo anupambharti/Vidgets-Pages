@@ -43,6 +43,12 @@ To preview without a server, open `index.html`, `support.html`, or `privacy.html
 
 Verified locally on 19 September 2026: all three pages at 390px and 1280px in light/dark modes, with JavaScript disabled and a nested project URL. Internal links, FAQ controls, 200% text layout, exact policy content, and absence of third-party requests passed. Review screenshots are in the ignored `output/` directory. `tests/verify.mjs` uses Playwright with installed Chrome for repeatable QA; Playwright is a development-only tool and is not needed for hosting.
 
+Rechecked on 28 October 2026 after updating the set-management/deletion instructions: all 12 page/viewport/appearance cases passed again, including 200% text, JavaScript-disabled operation, nested paths, local links, FAQs, and no third-party requests. The website policy was also compared with the app's bundled policy using `VIDGETS_APP_POLICY=/absolute/path/to/Vidget/PrivacyPolicy.json`. Both use the 28 October revision.
+
+The later 28 October update documents all 12 widget types and the first-launch/replayable guided app tour. The unreleased medication prototype and its support/privacy descriptions were removed from the release scope. All 12 website cases and app-policy parity passed again. Publish this updated folder; no deployment was performed by the coding agent.
+
+The repository remote is `https://github.com/anupambharti/Vidgets-Pages.git`. Its expected Pages addresses, `https://anupambharti.github.io/Vidgets-Pages/privacy.html` and `https://anupambharti.github.io/Vidgets-Pages/support.html`, returned HTTP 404 during this check. That does not inspect your GitHub Pages settings or rule out a different deployment URL. Enable Pages for the chosen branch/root, push these updates, and check the final public addresses before putting them in App Store Connect. This QA did not push or publish changes.
+
 ## Before Submission
 
 - Confirm the support inbox is monitored and can send/receive messages. No email was sent as part of creation.

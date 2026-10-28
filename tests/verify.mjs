@@ -6,6 +6,13 @@ import { resolve, sep } from 'node:path';
 
 const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const root = resolve(fileURLToPath(new URL('../', import.meta.url)));
+if (process.env.VIDGETS_APP_POLICY) {
+  assert.deepEqual(
+    JSON.parse(await readFile(resolve(root, 'content/privacy-policy.json'), 'utf8')),
+    JSON.parse(await readFile(process.env.VIDGETS_APP_POLICY, 'utf8')),
+    'Website and bundled app policies differ'
+  );
+}
 const prefix = '/vidgets-support/';
 const server = createServer(async (req, res) => {
   try {
@@ -60,6 +67,15 @@ try {
         }
         if (name === 'support') {
           assert(await page.locator('a[href^="mailto:admin@technoforbes.com"]').count() > 0);
+          assert((await page.locator('#manage-sets').textContent()).includes('Delete set'));
+          const text = await page.locator('article').textContent();
+          assert(text.includes('12 widget types'));
+          for (const title of ['Habit check-in', 'Last done', 'Quick counter', 'Next priority', 'Month at a glance']) {
+            assert(text.includes(title), `Missing widget help: ${title}`);
+          }
+          assert(text.includes('On first launch, finish the welcome screens'));
+          assert(text.includes('Settings > Guided app tour'));
+          assert(!/medication/i.test(text), 'Removed feature still advertised');
           await page.locator('summary').first().click();
           assert(await page.locator('details').first().getAttribute('open') !== null);
         }

@@ -2,7 +2,18 @@
 
 Standalone static website, separate from the iOS source repository. No dependencies, analytics, cookies, remote fonts, forms, or JavaScript in the published pages.
 
-## Publish
+## Live Deployment
+
+Published on 28 October 2026 from the public repository `https://github.com/anupambharti/Vidgets-Pages`, branch `main`, root directory. HTTPS is enforced.
+
+- Home: https://anupambharti.github.io/Vidgets-Pages/
+- Privacy: https://anupambharti.github.io/Vidgets-Pages/privacy.html
+- Support: https://anupambharti.github.io/Vidgets-Pages/support.html
+- Data controls: https://anupambharti.github.io/Vidgets-Pages/support.html#data
+
+The privacy and support pages returned HTTP 200, and their published contents matched the local HTML. The real URLs were entered in Vidgets' App Store Connect listing. Publishing these pages does not submit the app for review.
+
+## Republish
 
 1. Push the contents of this directory to your chosen GitHub repository.
 2. In that repository, open Settings > Pages and publish the branch from its root directory.
@@ -10,7 +21,7 @@ Standalone static website, separate from the iOS source repository. No dependenc
 4. Visit the published URLs in a private browser window, without signing in.
 5. Set the App Store Connect Privacy Policy URL to your published `privacy.html` URL and the Support URL to your published `support.html` URL.
 
-All internal links are relative, so the site works at either a custom-domain root or a GitHub Pages project path. No custom domain or account is assumed. Nothing has been pushed or published for you.
+All internal links are relative, so the site works at either a custom-domain root or a GitHub Pages project path. Updates pushed to `main` are deployed by GitHub Pages.
 
 ## Files
 
@@ -45,9 +56,9 @@ Verified locally on 19 September 2026: all three pages at 390px and 1280px in li
 
 Rechecked on 28 October 2026 after updating the set-management/deletion instructions: all 12 page/viewport/appearance cases passed again, including 200% text, JavaScript-disabled operation, nested paths, local links, FAQs, and no third-party requests. The website policy was also compared with the app's bundled policy using `VIDGETS_APP_POLICY=/absolute/path/to/Vidget/PrivacyPolicy.json`. Both use the 28 October revision.
 
-The later 28 October update documents all 12 widget types and the first-launch/replayable guided app tour. The unreleased medication prototype and its support/privacy descriptions were removed from the release scope. All 12 website cases and app-policy parity passed again. Publish this updated folder; no deployment was performed by the coding agent.
+The later 28 October update documents all 12 widget types and the first-launch/replayable guided app tour. The unreleased medication prototype and its support/privacy descriptions were removed from the release scope. All 12 website cases and app-policy parity passed again. These changes were committed and pushed before enabling GitHub Pages.
 
-The repository remote is `https://github.com/anupambharti/Vidgets-Pages.git`. Its expected Pages addresses, `https://anupambharti.github.io/Vidgets-Pages/privacy.html` and `https://anupambharti.github.io/Vidgets-Pages/support.html`, returned HTTP 404 during this check. That does not inspect your GitHub Pages settings or rule out a different deployment URL. Enable Pages for the chosen branch/root, push these updates, and check the final public addresses before putting them in App Store Connect. This QA did not push or publish changes.
+An earlier pre-deployment check returned HTTP 404. The later live check supersedes that result: Pages is enabled, both public documents load without authentication, and their contents match this release.
 
 ## Before Submission
 
